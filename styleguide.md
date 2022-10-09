@@ -1,0 +1,1 @@
+- Only files named `index.tsx` should have a default jsx export, all other files should be named exports.
