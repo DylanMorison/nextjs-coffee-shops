@@ -1,24 +1,24 @@
-import styles from "./banner.module.css"
+import styles from "./banner.module.css";
 
 export const Banner = ({
-	buttonText,
-	handleOnClick
+  buttonText,
+  handleOnClick,
 }: {
-	buttonText: string
-	handleOnClick: () => void
+  buttonText: string;
+  handleOnClick: () => void;
 }) => {
-	return (
-		<div className={styles.container}>
-			<h1 className={styles.title}>
-				<span className={styles.title1}>Coffee</span>{" "}
-				<span className={styles.title2}>Connoisseur</span>
-			</h1>
-			<p className={styles.subTitle}>Discover your local cofee shops!</p>
-			<div className={styles.buttonWrapper}>
-				<button className={styles.button} onClick={handleOnClick}>
-					{buttonText}
-				</button>
-			</div>
-		</div>
-	)
-}
+  return (
+    <div className={styles.container}>
+      <h1 className={styles.title}>
+        <span className={styles.title1}>Coffee</span>{" "}
+        <span className={styles.title2}>Connoisseur</span>
+      </h1>
+      <p className={styles.subTitle}>Discover your local cofee shops!</p>
+      <div className={styles.buttonWrapper}>
+        <button className={styles.button} onClick={handleOnClick}>
+          {buttonText}
+        </button>
+      </div>
+    </div>
+  );
+};
